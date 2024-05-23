@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Problema 5</title>
+    <link rel="stylesheet" href="style 5.css">
+</head>
+<body>
+    <main>
+        <header>
+            <img src="https://net.ecala.net/storage/media/I488LfNcYokpjtd6TbU4kKd1TOJAigXL5zdQoVWg.svg" alt="">
+        </header>
+        <h1>Estructuras condicionales anidadas</h1>
+        <div id="caso">
+            <img src="img/P5.bmp" alt="">
+        </div>
+        <div id="solucion">
+            <script>
+                var edad,nivel_hemo,msj;
+
+                edad=parseInt(prompt("Ingrese la edad:"));
+                nivel_hemo=parseFloat(prompt("Ingrese nivel de hemoglobina:"));
+
+                if (edad<=1 && nivel_hemo>13-26) {
+                    msj="Negativo"
+                } else {
+                    msj="Positivo"
+                }
+                if (edad>1 && edad<=6 && nivel_hemo>10 && nivel_hemo<=18) {
+                    msj="Negativo"
+                } else {
+                    msj="Positivo"
+                }
+                if (edad>6 && edad<=12 && nivel_hemo>11 && nivel_hemo<=15) {
+                    msj="Negativo"
+                } else {
+                    msj="Positivo"
+                }
+                if (edad>1 && edad<=5 && nivel_hemo>11.5 && nivel_hemo<=15) {
+                    msj="Negativo"
+                } else {
+                    msj="Positivo"
+                }
+                if (edad>5 && edad<=10 && nivel_hemo>12.6 && nivel_hemo<=15.5) {
+                    msj="Negativo"
+                } else {
+                    msj="Positivo"
+                }
+                if (edad>10 && edad<=15 && nivel_hemo>13 && nivel_hemo<=15.5) {
+                    msj="Negativo"
+                } else {
+                    msj="Positivo"
+                }
+                document.write("Edad: "+edad+"<br>");
+                document.write("Nivel de Hemoglobina: "+nivel_hemo+"<br>");
+                document.write("Resultado: "+msj+"<br>");
+            </script>
+        </div>
+        <div id="siguiente">
+            <div>
+                <a href="index 4.html"><h2>Problema Anterior</h2></a>
+            </div>
+            <div>
+                <h2>Problemas Terminados</h2>
+            </div>
+        </div>
+    </main>
+</body>
+</html>

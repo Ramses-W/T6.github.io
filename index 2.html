@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Problema 2</title>
+    <link rel="stylesheet" href="style 2.css">
+</head>
+<body>
+    <main>
+        <header>
+            <img src="https://net.ecala.net/storage/media/I488LfNcYokpjtd6TbU4kKd1TOJAigXL5zdQoVWg.svg" alt="">
+        </header>
+        <h1>Estructuras condicionales anidadas</h1>
+        <div id="caso">
+            <img src="img/P2.bmp" alt="">
+        </div>
+        <div id="solucion">
+            <script>
+                var nombre,torni_defec,torni_produ,msj,msj2;
+
+                nombre=prompt("Ingrese el nombre del operario a prueba:");
+                torni_produ=parseInt(prompt("Ingrese la cantidad de tornillos producidos:"));
+                torni_defec=parseInt(prompt("Ingrese la cantidad de tornillos defectuosos:"));
+
+                if (torni_produ<10000 && torni_defec>200) {
+                    msj="Grado 5"
+                    msj2="Pesimo Trabajo"
+                } else {
+                    if (torni_produ<10000 && torni_defec<200) {
+                        msj="Gado 6"
+                        msj2="Trabajo Regular"
+                    } else {
+                        if (torni_produ>10000 && torni_defec>200) {
+                            msj="Grado 7"
+                            msj2="Trabajo Regular"
+                        } else {
+                            if (torni_produ>10000 && torni_defec<200) {
+                                msj="Grado 8"
+                                msj2="Trabajo Excelente"
+                            }
+                        }
+                    }
+                }
+
+                document.write("=================== MEDICION DE GRADO DE EFICIENCIA ==================="+"<br>");
+                document.write("Nombre del operario: "+nombre+"<br>");
+                document.write("Tornillos producidos: "+torni_produ+"<br>");
+                document.write("Tornillos defectuosos: "+torni_defec+"<br>");
+                document.write("Grado de eficiencia: "+msj+"<br>");
+                document.write("Comentario: "+msj2+"<br>");
+            </script>
+        </div>
+        <div id="siguiente">
+            <div>
+                <a href="index.html"><h2>Problema Anterior</h2></a>
+            </div>
+            <div>
+                <a href="index 3.html"><h2>Siguiente Problema</h2></a>
+            </div>
+        </div>
+    </main>
+</body>
+</html>

@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Problema 4</title>
+    <link rel="stylesheet" href="style 4.css">
+</head>
+<body>
+    <main>
+        <header>
+            <img src="https://net.ecala.net/storage/media/I488LfNcYokpjtd6TbU4kKd1TOJAigXL5zdQoVWg.svg" alt="">
+        </header>
+        <h1>Estructuras condicionales anidadas</h1>
+        <div id="caso">
+            <img src="img/P4.bmp" alt="">
+        </div>
+        <div id="solucion">
+            <script>
+                var not1,not2,not3,not4,prom,curso,msj;
+
+                curso=prompt("Ingrese su curso:");
+                not1=parseFloat(prompt("Ingrese la calificación mas baja de  la práctica"));
+                not2=parseFloat(prompt("Ingrese la segunda calificación de práctica"));
+                not3=parseFloat(prompt("Ingrese la tercera calificación de práctica"));
+                not4=parseFloat(prompt("Ingrese la cuarta calificación de práctica"));
+
+                prom=(not2+not3+not4)/3
+                
+                if (prom>=13 && prom<=14) {
+                    msj="REGULAR"
+                } else {
+                    if (prom>=15 && prom<=17) {
+                        msj="BIEN"
+                    } else {
+                        if (prom>=18 && prom<=20) {
+                            msj="EXCELENTE"
+                        } else {
+                            msj="DESAPROBADO"
+                        }
+                    }
+                }
+                
+                document.write("Curso: "+curso+"<br>");
+                document.write("Nota 1: "+not1+"<br>");
+                document.write("Nota 2: "+not2+"<br>");
+                document.write("Nota 3: "+not3+"<br>");
+                document.write("Nota 4: "+not4+"<br>");
+                document.write("Promedio: "+prom+"<br>");
+                document.write(" "+msj+"<br>");
+            </script>
+        </div>
+        <div id="siguiente">
+            <div>
+                <a href="index 3.html"><h2>Problema Anterior</h2></a>
+            </div>
+            <div>
+                <a href="index 5.html"><h2>Siguiente Problema</h2></a>
+            </div>
+        </div>
+    </main>
+</body>
+</html>

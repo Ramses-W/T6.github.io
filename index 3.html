@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Problema 3</title>
+    <link rel="stylesheet" href="style 3.css">
+</head>
+<body>
+    <main>
+        <header>
+            <img src="https://net.ecala.net/storage/media/I488LfNcYokpjtd6TbU4kKd1TOJAigXL5zdQoVWg.svg" alt="">
+        </header>
+        <h1>Estructuras condicionales anidadas</h1>
+        <div id="caso">
+            <img src="img/P3.bmp" alt="">
+        </div>
+        <div id="solucion">
+            <script>
+                var precio,pre_kilo,kilos,descuento,precio_total;
+
+                kilos=parseInt(prompt("Ingrese la cantidad de Kilos a comprar:"));
+                pre_kilo=2.00
+                precio=2.00
+
+                if (kilos<2) {
+                    precio_total=precio*kilos
+                } else {
+                    if (kilos>2.01 && kilos<5) {
+                        precio=precio*kilos
+                        descuento=(precio*10)/100
+                        precio_total=precio-descuento
+                    } else {
+                        if (kilos>5.01 && kilos<10) {
+                            precio=precio*kilos
+                            descuento=(precio*15)/100
+                            precio_total=precio-descuento
+                        } else {
+                            if (kilos>10.01) {
+                                precio=precio*kilos
+                                descuento=(precio*20)/100
+                                precio_total=precio-descuento
+                            }
+                        }
+                    }
+                }
+
+                document.write("============= FRUTERIA ============="+"<br>");
+                document.write("Precio por kilo: "+pre_kilo+"<br>");
+                document.write("Kilos comprados: "+kilos+"<br>");
+                document.write("Precio: "+precio+"<br>");
+                document.write("Descuento. "+descuento+"<br>");
+                document.write("Precio Total: "+precio_total+"<br>");
+                document.write("============= FIN =============")
+            </script>
+        </div>
+        <div id="siguiente">
+            <div>
+                <a href="index 2.html"><h2>Problema Anterior</h2></a>
+            </div>
+            <div>
+                <a href="index 4.html"><h2>Siguiente Problema</h2></a>
+            </div>
+        </div>
+    </main>
+</body>
+</html>

@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Problema 1</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <main>
+        <header>
+            <img src="https://net.ecala.net/storage/media/I488LfNcYokpjtd6TbU4kKd1TOJAigXL5zdQoVWg.svg" alt="">
+        </header>
+        <h1>Estructuras condicionales anidadas</h1>
+        <div id="caso">
+            <img src="img/P1.bmp" alt="">
+        </div>
+        <div id="solucion">
+            <script>
+                var precio_total,precio_unitario,cantidad,msj,resultado;
+
+
+                cantidad=parseInt(prompt("Ingrese la cantidad de llantas a comprar:"));
+                if (cantidad<5) {
+                    precio_unitario=30000
+                    precio_total=30000*cantidad
+                } else {
+                    if (cantidad>=5 && cantidad<=10) {
+                        precio_unitario=25000
+                        precio_total=25000*cantidad
+                    } else {
+                        if (cantidad>10) {
+                            precio_unitario=20000
+                            precio_total=20000*cantidad
+                        }
+                    }
+                }
+                document.write("=========================  «Ponchadas»  ========================="+"<br>");
+                document.write("Llantas compradas: "+cantidad+"<br>");
+                document.write("Precio por cada llanta: $"+precio_unitario+"<br>")
+                document.write("Precio Total a pagar: $"+precio_total+ "<br>");
+                document.write("======================== Gracias por su compra ========================")
+            </script>
+        </div>
+        <div id="siguiente">
+            <a href="index 2.html"><h2>Siguiente Problema</h2></a>
+        </div>
+    </main>
+</body>
+</html>
